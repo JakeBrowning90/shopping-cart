@@ -1,7 +1,8 @@
 function Home() {
   return (
-    <div className="App">
+    <div id="Home">
       <h1>Home</h1>
+      <p>Some images and introductory text will go here</p>
     </div>
   );
 }
