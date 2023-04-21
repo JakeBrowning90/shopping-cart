@@ -33,5 +33,15 @@
     height: 5%
 }
 
+#itemDisplayDiv {
+    padding: 10px;
+}
 
+.ItemCard {
+    background-color: yellowgreen;
+    height: 300px;
+    width: 25%;
+    display: grid;
+    grid-template-rows: 3fr repeat(3, 1fr);
+}
 

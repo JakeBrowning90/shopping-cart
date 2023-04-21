@@ -1,3 +1,5 @@
+import ItemCard from "./ItemCard";
+
 function Shop() {
   return (
     <div id="Shop">
@@ -5,7 +7,9 @@ function Shop() {
         <div>Items in Cart: X</div>
         <button>Continue to Checkout</button>
       </div>
-      <div id="itemDisplayDiv">Item Display: Card divs for each item in inventory</div>
+      <div id="itemDisplayDiv">
+        <ItemCard />
+      </div>
     </div>
   );
 }
