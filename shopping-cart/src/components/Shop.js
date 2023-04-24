@@ -9,6 +9,11 @@ function Shop() {
       </div>
       <div id="itemDisplayDiv">
         <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
       </div>
     </div>
   );

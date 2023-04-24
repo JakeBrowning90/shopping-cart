@@ -4,8 +4,8 @@ function Nav() {
   return (
     <div id="Nav">
       <nav>
-        <h1>Logo</h1>
         <ul>
+          <li><h1>Logo</h1></li>
           <Link to='/'>
             <li>Home</li>
           </Link>
