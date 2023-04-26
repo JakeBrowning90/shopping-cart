@@ -9,14 +9,15 @@ function Shop(props) {
         <div>Items in Cart: {cartCount}</div>
         <button>Continue to Checkout</button>
       </div>
-      <div id="itemDisplayDiv">
+      <ul id="itemDisplayDiv">
 
         {inventory.map((item) => {
-                  return <ItemCard item={item} onClick={onClick}
-                  />
+                  return <li key={item.key}>
+                      <ItemCard item={item} onClick={onClick}/>
+                  </li>
               })}
 
-      </div>
+      </ul>
     </div>
   );
 }
