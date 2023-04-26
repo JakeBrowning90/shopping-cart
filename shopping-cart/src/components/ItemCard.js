@@ -1,15 +1,15 @@
 function ItemCard(props) {
-  const { item } = props;
+  const { item, handleQuantityChange, onClick } = props;
 
     return (
       <div className="ItemCard">
         <div>{item.img}</div>
         <div>{item.desc}</div>
         <div>Qty
-          <input type="number" min="0"/>
+          <input name="cardCount" type="number" min="0" onChange={handleQuantityChange} defaultValue={item.cardCount}/>
         </div>
         <div>
-          <button>Add to cart</button>
+          <button onClick={onClick}>Add to cart</button>
         </div>
       </div>
     );

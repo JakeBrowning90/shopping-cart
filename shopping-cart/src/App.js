@@ -9,19 +9,37 @@ import './styles/style.css';
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
   const [inventory, setInventory] = useState([
-    {key: 0, img: "applePic", desc: "apple"},
-    {key: 1, img: "bananaPic", desc: "banana"},
-    {key: 2, img: "cherryPic", desc: "cherry"},
-    {key: 3, img: "durianPic", desc: "durian"},
+    {key: 0, img: "applePic", desc: "apple", cardCount: 0},
+    {key: 1, img: "bananaPic", desc: "banana", cardCount: 0},
+    {key: 2, img: "cherryPic", desc: "cherry", cardCount: 0},
+    {key: 3, img: "durianPic", desc: "durian", cardCount: 0},
+    {key: 4, img: "pearPic", desc: "pear", cardCount: 0},
   ]);
+
+  const handleQuantityChange = (e) => {
+    const value = e.target.value;
+    const name = e.target.name;
+
+    setInventory((inventory) => {
+      return {
+        ...inventory,   // Spread Operator               
+        [name]: value
+      }
+    })
+  }
+
+  const addToCart = () => {
+    console.log("Added to cart!");
+    setCartCount(cartCount => cartCount + 1);
+  }
 
 
   return (
-    <BrowserRouter id="body">
+    <BrowserRouter id="body"> 
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop cartCount={cartCount} inventory={inventory}/>} />
+        <Route path="/shop" element={<Shop cartCount={cartCount} inventory={inventory} handleQuantityChange={handleQuantityChange} onClick={addToCart}/>} />
       </Routes>
       <div id="footer">Made by Jake Browning for The Odin Project, 2023</div>
     </BrowserRouter>
