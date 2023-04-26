@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
 import './styles/reset.css';
@@ -19,7 +19,7 @@ const App = () => {
     {key: 7, img: "img", desc: "Rhubarb", cardCount: 0},
     {key: 8, img: "img", desc: "Strawberry", cardCount: 0},
     {key: 9, img: "img", desc: "Tulip", cardCount: 0},
-    {key: 10, img: "img", desc: "Unmilled Rice", cardCount: 0},
+    // {key: 10, img: "img", desc: "Unmilled Rice", cardCount: 0},
   ]);
 
   const handleQuantityChange = (e) => {
@@ -59,7 +59,7 @@ const App = () => {
 
   return (
     <BrowserRouter id="body"> 
-      <Nav />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop cartCount={cartCount} inventory={inventory} handleQuantityChange={handleQuantityChange} onClick={addToCart}/>} />

@@ -5,7 +5,7 @@ function ItemCard(props) {
       <div className="ItemCard">
         <div>{item.img}</div>
         <div>{item.desc}</div>
-        <div>Qty
+        <div>Quantity:
           <input 
             name="cardCount" 
             type="number" 

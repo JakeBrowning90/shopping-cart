@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Header() {
   return (
-    <div id="Nav">
+    <div id="Header">
       <nav>
         <ul id="NavLinks">
           <li><h1>Logo</h1></li>
@@ -18,4 +18,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Header;
