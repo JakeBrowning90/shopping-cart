@@ -14,7 +14,7 @@
 }
 
 #Nav {
-    height: 15%;
+    height: 50px;
 }
 
 #footer{
@@ -43,7 +43,7 @@
 }
 
 #itemDisplayDiv {
-    padding: 10px;
+    padding: 10px 50px 10px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 5px;
@@ -52,7 +52,6 @@
 .ItemCard {
     background-color: yellowgreen;
     height: 300px;
-    /* width: 25%; */
     display: grid;
     grid-template-rows: 3fr repeat(3, 1fr);
 }

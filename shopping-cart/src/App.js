@@ -9,17 +9,22 @@ import './styles/style.css';
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
   const [inventory, setInventory] = useState([
-    {key: 0, img: "applePic", desc: "apple", cardCount: 0},
-    {key: 1, img: "bananaPic", desc: "banana", cardCount: 0},
-    {key: 2, img: "cherryPic", desc: "cherry", cardCount: 0},
-    {key: 3, img: "durianPic", desc: "durian", cardCount: 0},
-    {key: 4, img: "pearPic", desc: "pear", cardCount: 0},
+    {key: 0, img: "img", desc: "Blue Jazz", cardCount: 0},
+    {key: 1, img: "img", desc: "Cauliflower", cardCount: 0},
+    {key: 2, img: "img", desc: "Coffee Bean", cardCount: 0},
+    {key: 3, img: "img", desc: "Garlic", cardCount: 0},
+    {key: 4, img: "img", desc: "Kale", cardCount: 0},
+    {key: 5, img: "img", desc: "Parsnip", cardCount: 0},
+    {key: 6, img: "img", desc: "Potato", cardCount: 0},
+    {key: 7, img: "img", desc: "Rhubarb", cardCount: 0},
+    {key: 8, img: "img", desc: "Strawberry", cardCount: 0},
+    {key: 9, img: "img", desc: "Tulip", cardCount: 0},
+    {key: 10, img: "img", desc: "Unmilled Rice", cardCount: 0},
   ]);
 
   const handleQuantityChange = (e) => {
     const targetItem = inventory.find(item => item.key == e.target.dataset.key);
     const value = parseFloat(e.target.value);
-    console.log(value)
     setInventory(inventory.map(item => {
       if (item.key === targetItem.key) {
         // Create a *new* object with changes
@@ -29,8 +34,6 @@ const App = () => {
         return item;
       }
     }));
-    console.log(inventory)
-
 
   }
 
@@ -40,6 +43,17 @@ const App = () => {
 
     console.log("Added to cart!");
     setCartCount(cartCount => cartCount + cardCount);
+
+    setInventory(inventory.map(item => {
+      if (item.key === targetItem.key) {
+        // Create a *new* object with changes
+        return { ...item, cardCount: 0 };
+      } else {
+        // No changes
+        return item;
+      }
+    }));
+
   }
 
 
