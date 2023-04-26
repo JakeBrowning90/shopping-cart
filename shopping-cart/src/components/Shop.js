@@ -1,7 +1,7 @@
 import ItemCard from "./ItemCard";
 
 function Shop(props) {
-  const { cartCount, inventory, onClick } = props;
+  const { cartCount, inventory, handleQuantityChange, onClick } = props;
 
   return (
     <div id="Shop">
@@ -13,7 +13,7 @@ function Shop(props) {
 
         {inventory.map((item) => {
                   return <li key={item.key}>
-                      <ItemCard item={item} onClick={onClick}/>
+                      <ItemCard item={item} onClick={onClick} handleQuantityChange={handleQuantityChange}/>
                   </li>
               })}
 

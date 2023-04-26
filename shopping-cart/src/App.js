@@ -17,20 +17,29 @@ const App = () => {
   ]);
 
   const handleQuantityChange = (e) => {
-    const value = e.target.value;
-    const name = e.target.name;
-
-    setInventory((inventory) => {
-      return {
-        ...inventory,   // Spread Operator               
-        [name]: value
+    const targetItem = inventory.find(item => item.key == e.target.dataset.key);
+    const value = parseFloat(e.target.value);
+    console.log(value)
+    setInventory(inventory.map(item => {
+      if (item.key === targetItem.key) {
+        // Create a *new* object with changes
+        return { ...item, cardCount: value };
+      } else {
+        // No changes
+        return item;
       }
-    })
+    }));
+    console.log(inventory)
+
+
   }
 
-  const addToCart = () => {
+  const addToCart = (e) => {
+    const targetItem = inventory.find(item => item.key == e.target.dataset.key);
+    const cardCount = targetItem.cardCount;
+
     console.log("Added to cart!");
-    setCartCount(cartCount => cartCount + 1);
+    setCartCount(cartCount => cartCount + cardCount);
   }
 
 
