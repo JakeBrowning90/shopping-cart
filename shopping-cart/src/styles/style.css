@@ -123,6 +123,11 @@ img {
    
 }
 
+.itemImg {
+    justify-self: center;
+    align-self: center;
+}
+
 input {
     width: 25%;
 }

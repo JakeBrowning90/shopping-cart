@@ -3,7 +3,7 @@ function ItemCard(props) {
 
     return (
       <div className="ItemCard">
-        <div>{item.img}</div>
+        <img src={item.img} className='itemImg'/>
         <div>{item.desc}</div>
         <div>Quantity:
           <input 
