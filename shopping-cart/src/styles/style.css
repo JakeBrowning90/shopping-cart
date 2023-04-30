@@ -1,13 +1,30 @@
+@font-face {
+    font-family: BreeSerif;
+    src: url(../components/fonts/BreeSerif-Regular.ttf);
+}
+
 html,
 body,
 #root {
+    font-family: BreeSerif;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#Header,
-#footer {
+h1{
+    font-size: 2em;
+}
+
+a:link, a:visited {
+    color: black
+}
+
+a:hover{
+    color: #27bfc7
+}
+
+#Header, #footer {
     box-sizing: border-box;
     position: fixed;
     display: flex;
@@ -19,7 +36,7 @@ body,
 }
 
 #Header {
-    height: 10vh;
+    height: 15vh;
     top: 0;
 }
 
@@ -36,6 +53,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+#Logo{
+    max-height: 110px;
+    object-fit: contain;
 }
 
 #footer {
@@ -46,7 +69,7 @@ nav {
 
 #Home,
 #Shop {
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 5vh;
     height: 100%
 }
@@ -88,17 +111,20 @@ img {
 }
 
 #cartDiv {
-    background-color: #c8a104;
-    height: 10%;
+    position: fixed;
+    height: 5%;
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 5px;
+    background-color: #c8a104;
 }
 
 #itemDisplayDiv {
     background-color: #f6f19f;
     min-height: 90%;
+    margin-top: 5vh;
     padding: 10px 15% 40px 15%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
