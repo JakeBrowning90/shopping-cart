@@ -10,6 +10,7 @@ body,
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 h1{
@@ -92,14 +93,18 @@ nav {
     padding: 10px;
 }
 
-#GreetImg {
-    grid-row: 1 / -1;
+#Greeting > * {
+    padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+#GreetImg {
+    grid-row: 1 / -1;
     justify-content: end;
     object-fit: contain;
-    padding: 20px;
 }
+
 
 img {
     max-width: 100%;
@@ -108,6 +113,7 @@ img {
 #Shop {
     display: flex;
     flex-direction: column;
+    background-color: #f6f19f;
 }
 
 #cartDiv {
@@ -115,28 +121,35 @@ img {
     height: 5%;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 5px;
     background-color: #c8a104;
 }
 
+#CheckoutButton {
+    margin-right: 10px;
+}
+
 #itemDisplayDiv {
     background-color: #f6f19f;
-    min-height: 90%;
+    height: 70vh;
     margin-top: 5vh;
     padding: 10px 15% 40px 15%;
+    /* margin-bottom: 15%; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .ItemCard {
     background-color: #f7e13e;
     height: 300px;
+    padding: 10px;
     display: grid;
     grid-template-rows: 3fr repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -150,10 +163,23 @@ img {
 }
 
 .itemImg {
+    grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
 }
+.itemDesc {
+    grid-column: 1 / -1;
+}
+.itemPrice {
+    grid-column: 1 / 2;
+}
+.itemQuantity {
+    grid-column: -2 / -1;
+}
+.itemAdd {
+    grid-column: 1 / -1;
+}
 
 input {
-    width: 25%;
+    width: 50%;
 }

@@ -8,8 +8,8 @@ function Home() {
           <img src={tomnook}/>  
         </div>
         
-        <h1>Welcome to Island Flowers!</h1>
-        <p>Checkout our selection of flowers in a wider variety of colours and species. 
+        <h1 className='greetingText'>Welcome to Island Flowers!</h1>
+        <p className='greetingText'>Checkout our selection of flowers in a wider variety of colours and species. 
           Whether you are decorating for an event, sending a gift, 
           or just want to make your home more beautiful, we have what you are looking for.
           Start your floral adventure today!
