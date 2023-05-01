@@ -4,7 +4,7 @@ function ItemCard(props) {
   const { item, handleQuantityChange, onClick } = props;
 
     return (
-      <div className="ItemCard">
+      <form className="ItemCard">
         <img src={item.img} className='itemImg' alt="flowerImg"/>
         <div className='itemDesc'>{item.desc}</div>
         <div className='itemPrice'>
@@ -21,12 +21,13 @@ function ItemCard(props) {
             data-key={item.key}
             onChange={handleQuantityChange} 
             value={item.cardCount}
+            placeholder="0 - 99"
           />
         </div>
         <div className='itemAdd'>
-          <button data-key={item.key} onClick={onClick}>Add to cart</button>
+          <button type="button" data-key={item.key} onClick={onClick}>Add to cart</button>
         </div>
-      </div>
+      </form>
     );
   }
   

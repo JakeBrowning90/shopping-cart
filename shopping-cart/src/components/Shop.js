@@ -25,8 +25,9 @@ function Shop() {
     const targetItem = inventory.find(item => item.key === e.target.dataset.key);
     const cardCount = targetItem.cardCount;
 
-    console.log("Added to cart!");
-    setCartCount(cartCount => cartCount + cardCount);
+    if (cardCount > 0 && cardCount < 100){
+      setCartCount(cartCount => cartCount + cardCount);
+    }
 
     setInventory(inventory.map(item => {
       if (item.key === targetItem.key) {

@@ -189,3 +189,7 @@ img {
 input {
     width: 50%;
 }
+
+input:invalid {
+    border: solid red 3px;
+}
