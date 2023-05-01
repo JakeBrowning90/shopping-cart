@@ -180,6 +180,10 @@ img {
     grid-column: 1 / -1;
 }
 
+.bellIcon {
+    height: 2em;
+}
+
 input {
     width: 50%;
 }

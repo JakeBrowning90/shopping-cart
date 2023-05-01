@@ -1,3 +1,5 @@
+import Bell from "./img/bells.png";
+
 function ItemCard(props) {
   const { item, handleQuantityChange, onClick } = props;
 
@@ -5,7 +7,11 @@ function ItemCard(props) {
       <div className="ItemCard">
         <img src={item.img} className='itemImg'/>
         <div className='itemDesc'>{item.desc}</div>
-        <div className='itemPrice'>Price: {item.price}</div>
+        <div className='itemPrice'>
+          Price: 
+          <img src={Bell} className="bellIcon"/>
+          {item.price}
+        </div>
         <div className='itemQuantity'>Qty: 
           <input 
             name="cardCount" 

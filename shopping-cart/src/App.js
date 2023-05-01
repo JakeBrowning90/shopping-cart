@@ -15,7 +15,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
-      <div id="footer">Made by Jake Browning for The Odin Project, 2023</div>
+      <div id="footer">
+        Made by Jake Browning for The Odin Project, 2023.
+        This is a not-for-profit fan project.
+        All characters and assets shown are property of Nintendo.
+      </div>
     </BrowserRouter>
   );
 };
