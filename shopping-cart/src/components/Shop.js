@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import React,{ useState } from "react";
 import Inventory from "./Inventory";
 import ItemCard from "./ItemCard";
 
@@ -8,7 +8,7 @@ function Shop() {
   const [inventory, setInventory] = useState( Inventory );
 
   const handleQuantityChange = (e) => {
-    const targetItem = inventory.find(item => item.key == e.target.dataset.key);
+    const targetItem = inventory.find(item => item.key === e.target.dataset.key);
     const value = parseFloat(e.target.value);
     setInventory(inventory.map(item => {
       if (item.key === targetItem.key) {
@@ -22,7 +22,7 @@ function Shop() {
   }
 
   const addToCart = (e) => {
-    const targetItem = inventory.find(item => item.key == e.target.dataset.key);
+    const targetItem = inventory.find(item => item.key === e.target.dataset.key);
     const cardCount = targetItem.cardCount;
 
     console.log("Added to cart!");

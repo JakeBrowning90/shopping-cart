@@ -1,5 +1,5 @@
-import React,{ useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
@@ -9,7 +9,7 @@ import './styles/style.css';
 const App = () => {
 
   return (
-    <BrowserRouter id="body"> 
+    <HashRouter id="body"> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ const App = () => {
         <p>This is a not-for-profit fan project.
         All characters and assets shown are property of Nintendo.</p>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

@@ -5,7 +5,7 @@ function Home() {
     <div id="Home">
       <div id="Greeting">
         <div id="GreetImg">
-          <img src={tomnook}/>  
+          <img src={tomnook} alt="Tom Nook"/>  
         </div>
         
         <h1 className='greetingText'>Welcome to Island Flowers!</h1>

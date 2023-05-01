@@ -5,11 +5,11 @@ function ItemCard(props) {
 
     return (
       <div className="ItemCard">
-        <img src={item.img} className='itemImg'/>
+        <img src={item.img} className='itemImg' alt="flowerImg"/>
         <div className='itemDesc'>{item.desc}</div>
         <div className='itemPrice'>
           Price: 
-          <img src={Bell} className="bellIcon"/>
+          <img src={Bell} className="bellIcon" alt="bellImg"/>
           {item.price}
         </div>
         <div className='itemQuantity'>Qty: 

@@ -7,7 +7,7 @@ function Header() {
       <nav>
         <ul id="NavLinks">
           <li>
-            <img src={Logo} id='Logo'/>
+            <img src={Logo} id='Logo' alt="logo"/>
           </li>
           <Link to='/'>
             <li>
