@@ -72,3 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 By Nintendo - Nintendo Wikia, Fair use, https://en.wikipedia.org/w/index.php?curid=59718193
 https://nookipedia.com/w/index.php?curid=95869
+
+This project demonstrates use of react-router-dom to create an app which can switch between two different components each in their own route and accessible through Links in the header. The route practice was relatively straight forward, so I invested a little more time in implementing some CSS skills which I hadn't used in awhile. I used a sticky header and footer, as well as a sticky div for the shopping cart quantity. I also implemented a flexible grid to display a varying amount of item cards per row based on the width of the browser window. I themed the app after Animal Crossing to go with the "shopping" theme without getting too bogged down in style choices.
+
+One aspect of the assignment which I mostly glossed over was the use of React tests. The curriculum seemed somewhat disparate from everything else, and by the time I reached that part of the project, everything was already working as expected. I plan to come back and work more on how to correctly implement tests in the future, but for the moment, it feels like my projects are at such a small scope that they are easier to test in browser.
