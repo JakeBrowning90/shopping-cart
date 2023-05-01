@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.fa2b96a9.css",
+    "main.js": "/shopping-cart/static/js/main.11b57f1f.js",
+    "static/media/Tom_Nook.png": "/shopping-cart/static/media/Tom_Nook.dba8f2f6567180fa968d.png",
+    "static/media/BreeSerif-Regular.ttf": "/shopping-cart/static/media/BreeSerif-Regular.394d00c6f1675079a1a9.ttf",
+    "static/media/Logo.png": "/shopping-cart/static/media/Logo.4ce19edb5eb1914a8b55.png",
+    "static/media/lilyWhite.png": "/shopping-cart/static/media/lilyWhite.282b61d368daf64c3314.png",
+    "static/media/lilyPink.png": "/shopping-cart/static/media/lilyPink.9f8d779ebccd80838b59.png",
+    "static/media/mumWhite.png": "/shopping-cart/static/media/mumWhite.95a3949fddd071681834.png",
+    "static/media/lilyOrange.png": "/shopping-cart/static/media/lilyOrange.7cca2ae8c8805cd85492.png",
+    "static/media/mumGreen.png": "/shopping-cart/static/media/mumGreen.3fb4d37494471939e54a.png",
+    "static/media/lilyRed.png": "/shopping-cart/static/media/lilyRed.599d64d086533d831704.png",
+    "static/media/Lily-of-the-Valley.png": "/shopping-cart/static/media/Lily-of-the-Valley.9cb0a0b0e55109ac4e9c.png",
+    "static/media/mumPurple.png": "/shopping-cart/static/media/mumPurple.f4a539188c6209ab9fc6.png",
+    "static/media/lilyYellow.png": "/shopping-cart/static/media/lilyYellow.876ea31929cc5ab92a05.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.fa2b96a9.css.map": "/shopping-cart/static/css/main.fa2b96a9.css.map",
+    "main.11b57f1f.js.map": "/shopping-cart/static/js/main.11b57f1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa2b96a9.css",
+    "static/js/main.11b57f1f.js"
+  ]
+}
